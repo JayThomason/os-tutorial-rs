@@ -1,5 +1,3 @@
-[BITS 64]
-
 ; Infinite loop (e9 fd ff)
 loop:
     jmp loop 
