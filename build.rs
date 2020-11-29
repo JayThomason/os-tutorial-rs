@@ -1,5 +1,5 @@
 fn generate_bootloader() {
-    let input = "src/boot_sector_hello.asm";
+    let input = "src/boot_sector_memory_org.asm";
     let output = format!("{}/{}", std::env::var("OUT_DIR").unwrap(), "bootloader.bin");
     println!("cargo:rerun-if-changed={}", input);
     let nasm_output = std::process::Command::new("nasm")
